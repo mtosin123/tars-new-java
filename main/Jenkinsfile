@@ -10,7 +10,11 @@ pipeline{
 
                 script{
 
-                    git branch: 'main', url: 'https://github.com/mtosin123/tars-new-java.git'
+                    gitcheckout(
+                        branch: "main"
+                        url: "https://github.com/mtosin123/tars-new-java.git"
+
+                    )
 
 
                 }
